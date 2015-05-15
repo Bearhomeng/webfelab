@@ -1,0 +1,29 @@
+.head {
+    fill: yellow;
+    stroke: black;
+    stroke-width: 2px;
+    transform: translate(300px, 164px);
+}
+
+.eye {
+    fill: black;
+    transform: translate(210px, 100px);
+}
+
+.rightEye {
+    transform: translate(380px, 100px);
+}
+
+.mouth {
+    stroke: black;
+    fill-opacity: 0;
+    stroke-width: 5px;
+    clip-path: url(#MyClip);
+    transform: translate(0px, 0px);
+}
+
+.clipBox {
+    width: 600px;
+    height: 100px;
+    transform: translate(30px, 200px);
+}
