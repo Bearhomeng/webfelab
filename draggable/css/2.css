@@ -1,0 +1,31 @@
+.span-6 {
+
+}
+
+.dragTarg {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background: #fef4eb;
+    border: 3px solid black;
+}
+
+.red {
+    background: #ff0000;
+}
+
+.green {
+    background: #00ff00;
+}
+
+.blue {
+    background: #0000ff;
+}
+
+.dragItems > div {
+    color: #fef4eb;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}

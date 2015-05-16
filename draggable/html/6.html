@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>上传文件</h1>
+<div class="row">
+    <textarea name="" id="showDrop" cols="30" rows="10"></textarea>
+</div>
+</body>
+<script>
+    window.onload = function () {
+        var showDrop = document.getElementById('showDrop');
+        showDrop.addEventListener('dragover', function (e) {
+            e.preventDefault();
+        });
+        showDrop.addEventListener('drop', readData, false);
+
+        var readData = function (e) {
+            //防止某些浏览器重定向
+            e.stopPropagation();
+            e.preventDefault();
+            var filelist = e.dataTransfer.files;
+            if(!filelist) {return;}
+            if(filelist.length > 0){
+                var filereader = new FileReader();
+                filereader.myTarg = document.getElementById('showDrop');
+                var mydata = function(event){
+                    this.myTarg.value = this.result;
+                };
+                filereader.onloadend = mydata;
+                filereader.readAsText(filelist[0]);
+            }
+        };
+    };
+</script>
+</html>
