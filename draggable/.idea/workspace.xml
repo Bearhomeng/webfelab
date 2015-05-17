@@ -34,21 +34,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/git/webfelab/UserInteraction/js.js" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/UserInteraction/html/1.html" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/UserInteraction/html/2.html" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/UserInteraction/css/2.css" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/UserInteraction/js/2.js" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/draggable/html/2.html" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/draggable/css/2.css" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/draggable/html/3.html" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/draggable/js/2.js" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/draggable/js/3.js" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/draggable/css/3.css" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/draggable/html/4.html" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/draggable/js/5.js" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/draggable/html/5.html" />
-        <option value="$USER_HOME$/Desktop/git/webfelab/draggable/html/6.html" />
+        <option value="$PROJECT_DIR$/../UserInteraction/js.js" />
+        <option value="$PROJECT_DIR$/../UserInteraction/html/1.html" />
+        <option value="$PROJECT_DIR$/../UserInteraction/html/2.html" />
+        <option value="$PROJECT_DIR$/../UserInteraction/css/2.css" />
+        <option value="$PROJECT_DIR$/../UserInteraction/js/2.js" />
+        <option value="$PROJECT_DIR$/html/2.html" />
+        <option value="$PROJECT_DIR$/css/2.css" />
+        <option value="$PROJECT_DIR$/html/3.html" />
+        <option value="$PROJECT_DIR$/js/2.js" />
+        <option value="$PROJECT_DIR$/js/3.js" />
+        <option value="$PROJECT_DIR$/css/3.css" />
+        <option value="$PROJECT_DIR$/html/4.html" />
+        <option value="$PROJECT_DIR$/js/5.js" />
+        <option value="$PROJECT_DIR$/html/5.html" />
+        <option value="$PROJECT_DIR$/html/6.html" />
       </list>
     </option>
   </component>
@@ -60,8 +60,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-558" />
-    <option name="y" value="85" />
+    <option name="x" value="138" />
+    <option name="y" value="77" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
@@ -88,8 +88,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="draggable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="draggable" />
@@ -144,13 +152,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/git/webfelab/UserInteraction" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../editable" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -194,6 +200,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
   </component>
@@ -211,26 +223,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-558" y="85" width="1932" height="1056" extended-state="0" />
+    <frame x="138" y="77" width="1932" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25052193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -249,103 +261,87 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/html/1.html">
+    <entry file="file://$PROJECT_DIR$/html/1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.25">
           <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/css/2.css">
+    <entry file="file://$PROJECT_DIR$/css/2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.74833703">
           <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/html/2.html">
+    <entry file="file://$PROJECT_DIR$/html/2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5612009">
           <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/js/2.js">
+    <entry file="file://$PROJECT_DIR$/js/2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35920176">
           <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/html/4.html">
+    <entry file="file://$PROJECT_DIR$/html/4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28060046">
           <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/html/3.html">
+    <entry file="file://$PROJECT_DIR$/html/3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28060046">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/js/3.js">
+    <entry file="file://$PROJECT_DIR$/js/3.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8203991">
           <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/css/3.css">
+    <entry file="file://$PROJECT_DIR$/css/3.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7184035">
           <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/css/5.css">
+    <entry file="file://$PROJECT_DIR$/css/5.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4789357">
           <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/js/5.js">
+    <entry file="file://$PROJECT_DIR$/js/5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/html/5.html">
+    <entry file="file://$PROJECT_DIR$/html/5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.0">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/git/webfelab/draggable/html/6.html">
+    <entry file="file://$PROJECT_DIR$/html/6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.62586606">
           <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>

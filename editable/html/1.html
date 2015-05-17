@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>可编辑DIV</h1>
+
+<div contenteditable="true" class="row" id="editable" spellcheck="true">
+    <p>
+        This is a really great book.
+        I am so glad I am reading it because:
+    </p>
+    <ul>
+        <li>it is witty</li>
+        <li>i am now well informed about HTML5</li>
+        <li>the authors are all around great guys</li>
+    </ul>
+</div>
+</body>
+<script>
+    var myEdit = document.getElementById('editable');
+    var setEditMemory = function (content) {
+        localStorage.setItem("myContent", myEdit.innerHTML);
+    };
+
+    myEdit.addEventListener('blur', setEditMemory);
+    if (localStorage.getItem("myContent")) {
+        myEdit.innerHTML = localStorage.getItem("myContent");
+    }
+</script>
+</html>
