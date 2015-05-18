@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>transform示例</title>
+    <style>
+
+        body{
+            background: black;
+            color: white;
+        }
+        .container {
+            position: relative;
+            top:100px;
+            left: 400px;
+
+        }
+        .container > div {
+            width: 100px;
+            height: 80px;
+            border: 2px solid #ffffff;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transform-origin: center 200px;/*使得图片围着一个中心旋转，而不是以自己为中心旋转*/
+            transition: transform 1s ease;
+        }
+        .red{
+            background: red;
+        }
+        .green{
+            background: green;
+        }
+        .blue{
+            background: blue;
+        }
+        .container > div:first-child{
+            transform: rotate(-5deg);
+        }
+        .container > div:last-child{
+            transform: rotate(5deg);
+        }
+
+        .container:hover > div:first-child{
+            transform: rotate(-25deg);
+        }
+        .container:hover > div:last-child{
+            transform: rotate(25deg);
+        }
+
+    </style>
+</head>
+<body>
+<h1>transition示例</h1>
+<div class="container">
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+</div>
+
+</body>
+</html>

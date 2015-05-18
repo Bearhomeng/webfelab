@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background: black;
+            color: white;
+            text-align: center;
+        }
+        .spinner{
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            border: 1.1em solid rgba(255,255,255,.2);
+            border-left-color:#ffffff;
+            border-radius: 50%;
+            animation: load 1.5s infinite linear;
+            -webkit-animation: load 1.5s infinite linear;
+        }
+        @keyframes load {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @-webkit-keyframes load {
+            from{
+                -webkit-transform: rotate(0deg);
+            }
+            to{
+                -webkit-transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>巧用boder</h1>
+<div class="spinner"></div>
+
+</body>
+</html>
