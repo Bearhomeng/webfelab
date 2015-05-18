@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/fullcalendar.css"/>
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css"/>
+</head>
+
+<body>
+<h1>里程碑日历</h1>
+
+<form action="">
+    <fieldset>
+        <div class="control-group">
+            <label for="" class="control-label">Add a Milestone</label>
+            <div class="controls">
+                <h2>New Milestone</h2>
+                <input type="text" class="span2" name="name"/>
+                <input type="text" class="span2" name="start" data-date-format="mm/dd/yy" id="dp1"/>
+                <input type="text" class="span2" name="end" data-date-format="mm/dd/yy" id="dp2"/>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="btn btn-primary">Save</button>
+            <button class="btn">cancel</button>
+        </div>
+    </fieldset>
+
+    <div id="calendar"></div>
+
+</form>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/fullcalendar.js"></script>
+<script>
+    $(function(){
+       $('#dp1').datepicker();
+        $('#dp2').datepicker();
+    });
+    var html5hacks= {};
+    html5hacks.msArray = [];
+    var indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB;
+    if('webkitIndexedDB' in window){
+        window.IDBTransaction = window.webkitIDBTransaction;
+        window.IDBKeyRange = window.webkitIDBKeyRange;
+    }
+    html5hacks.indexedDB = {};
+    html5hacks.indexedDB.db = null;
+    function init(){
+        html5hacks.indexedDB.open();
+    }
+    html5hacks.indexedDB.open = function () {
+        var request = indexedDB.open("milestones");
+
+        request.onsuccess = function (e) {
+            var v = "1";
+            html5hacks.indexedDB.db = e.target.result;
+
+            var db = html5hacks.indexedDB.db;
+
+            if (v != db.version) {
+                var setVrequest = db.setVersion(v);
+                setVrequest.onerror = html5hacks.indexedDB.onerror;
+                setVrequest.onsuccess = function (e) {
+                    if (db.objectStoreNames.contains("milestone")) {
+                        db.deleteObjectStore("milestone");
+                    }
+
+                    var stone = db.createObjectStore("mileStone", {keyPath: "timeStamp"});
+                    html5hacks.indexedDB.init();
+                };
+            }
+            else {
+                html5hacks.indexedDB.init();
+            }
+        };
+        request.onerror =html5hacks.indexedDB.onerror;
+    }
+    
+    html5hacks.indexedDB.init = function () {
+        var db = html5hacks.indexedDB.db;
+        var trans = db.transaction(["milestone"].IDBTransaction.READ_WRITE);
+        var store = trans.objectStore("milestone");
+
+        var keyRange = IDBKeyRange.lowerBound(0);
+        var cusorRequest = store.openCursor(keyRange);
+
+        cusorRequest.onsuccess = function (e) {
+            var result = e.target.result;
+
+            if(!result == false){
+                $('#calendar').fullCalendar({
+                    header:{
+                        left:"prev,next today",
+                        center:'title',
+                        right:'month,agendaWeek,agendaDay'
+                    },
+                    weekmode:'variable',
+                    height:400,
+                    editable:true,
+                    events:html5hacks.msArray
+                });
+                return;
+            }else{
+                console.log("result.value", result.value);
+                buildMilestoneArray(result.value);
+                result.continue();
+            }
+        };
+        cusorRequest.onerror = html5hacks.indexedDB.onerror;
+    }
+    function buildMilestoneArray(ms){
+        html5hacks.msArray.push(ms);
+    }
+
+    $('form').submit(function(){
+        var data = $(this).serializeArray();
+
+        html5hacks.indexedDB.addMileStone(data);
+        return false;
+    });
+
+    html5hacks.indexedDB.addMileStone = function(d){
+        var db =html5hacks.indexedDB.db;
+        var trans = db.transaction('[milestone]',IDBTransaction.READ_WRITE);
+        var store = trans.objectStore("milestone");
+        var data = {
+            "title":d[0].value,
+            "start":d[1].value,
+            "end":d[2].value,
+            "timestamp":new Date().getTime()
+        };
+
+        var request = store.put(data);
+
+        var dataArr = [data];
+        request.onsuccess = function (e) {
+            $('#calendar').fullCalendar("addEventSource",dataArr);
+        }
+
+        request.onerror = function (e) {
+            console.log("Erro Adding:", e);
+        }
+    };
+</script>
+</html>

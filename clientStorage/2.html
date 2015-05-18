@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body onload="init()">
+<h1>Webstorage API</h1>
+<div id="resultDiv"></div>
+</body>
+<script>
+    function init() {
+        if(!localStorage.getItem("visits")) localStorage.setItem("visits",0);
+
+        //获取并增加值
+        var visits = Number(localStorage.getItem("visits")) + 1;
+
+        //显示次数
+        document.querySelector("#resultDiv").innerHTML = "You have been here " + visits + " time(s).";
+
+        //回存
+        localStorage.setItem("visits", visits);
+    }
+</script>
+</html>
